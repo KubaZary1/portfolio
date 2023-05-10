@@ -1,10 +1,11 @@
+import Navbar from '@/components/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const fontMontserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Kuba Musielski Portfolio Website',
+  title: 'Kuba Musielski Portfolio',
   description: 'This is portfolio of young developer in next js.',
 }
 
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={fontMontserrat.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
