@@ -1,5 +1,5 @@
 import Link from "next/link";
-import style from "./Navbar.module.css"
+import styles from "./Navbar.module.css"
 
 export default function Navbar() {
   const navbarLinks = [
@@ -7,9 +7,9 @@ export default function Navbar() {
     {path: '/about', name: "about"},
   ]
   return (
-    <nav className={style.navbar}>
-      <div className="left">KUBA MUSIELSKI</div>
-      <div className="right">
+    <nav className={styles.navbar}>
+      <div><div className={styles.logo}>KUBA MUSIELSKI</div></div>
+      <div>
         {navbarLinks.map((element, index)=> {
           return (<Link href={element.path} key={index}>{element.name.toUpperCase()}</Link>)
         })}
