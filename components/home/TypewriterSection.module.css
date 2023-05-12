@@ -12,20 +12,20 @@
 }
 .textLandingSpecial {
   font-weight: 1000;
-  color: #1882da;
+  color: var(--anchor-text-color);
 }
 
 .aboutMeButton {
   display: inline-block;
   margin: 20px;
-  border: 1px solid #1882da;
+  border: 1px solid var(--anchor-text-color);
   text-decoration: none;
   padding: 15px;
   border-radius: 40px;
   font-size: 45px;
 }
 .aboutMeButton:hover {
-  background-color: #1882da;
+  background-color: var(--anchor-text-color);
   color: #141414;
 }
 .aboutMeButton:active {
