@@ -1,7 +1,8 @@
 :root {
   --background-color: #141414;
   --text-color: #fff;
-  --anchor-text-color: #52beff; /* #0081cc */
+  --anchor-text-color: #52beff; /* Main color */
+  --secondary-color: #5393bb; /* Main color */
   --navbar-background: #282828;
 }
 *,
