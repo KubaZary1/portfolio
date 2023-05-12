@@ -1,9 +1,10 @@
 "use client";
 
-import {IoEllipsisVertical} from "react-icons/io5"
 import Link from "next/link";
 import styles from "./Navbar.module.css"
 import { useState } from "react";
+import buttonMenuIcon from "../public/menu.svg"
+import Image from "next/image";
 
 export default function Navbar() {
   const [navbarMobileState, setNavbarMobileState] = useState(false)
@@ -21,7 +22,7 @@ export default function Navbar() {
         })}
       </div>
     </nav>
-    <button type="button" className={styles.mobileNavbarButton} onClick={() => setNavbarMobileState(prev => !prev)} title="toggle navbar"><IoEllipsisVertical /></button>
+    <button type="button" className={styles.mobileNavbarButton} onClick={() => setNavbarMobileState(prev => !prev)} title="toggle navbar"><Image className={styles.buttonIcon} src={buttonMenuIcon} alt="MENU"/></button>
     </>
   )
 };
