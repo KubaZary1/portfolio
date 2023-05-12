@@ -5,6 +5,9 @@
   align-items: center;
   height: 60px;
   padding-inline: 10px;
+  position: sticky;
+  width: 100%;
+  top: 0;
 }
 .navbar a {
   text-decoration: none;
