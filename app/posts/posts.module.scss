@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+@media screen and (0px <= width <= 600px) {
+  .container {
+    margin-top: 10px;
+  }
+}
