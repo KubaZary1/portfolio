@@ -23,12 +23,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: rgb(255 255 255 /.125);
+    border-radius: 10px;
+    margin-top: 15px;
   }
   .coverImage {
     width:50%;
     height: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
   }
   .postInfo {
     display: flex;
